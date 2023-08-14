@@ -1,2 +1,2 @@
-export { Button } from './shared/ui/Button/Button';
-export { InputCustom } from './shared/ui/Input/Input';
+export * from './shared/ui/Button/Button';
+export * from './shared/ui/Input/Input';

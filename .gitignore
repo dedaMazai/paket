@@ -1,4 +1,5 @@
 /cache/
+/dist
 /storybook-statik
 node_modules/
 .vscode
