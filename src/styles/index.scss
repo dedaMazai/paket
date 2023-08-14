@@ -1,0 +1,23 @@
+@import 'reset';
+@import 'antd/dist/reset.css';
+@import './variables/local.scss';
+
+body {
+    background: var(--bg-color);
+    color: var(--primary-color);
+}
+
+*::-webkit-scrollbar {
+    width: 8px;               /* ширина scrollbar */
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--bg-color);        /* цвет дорожки */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--green);    /* цвет плашки */
+    border-radius: 3px;       /* закругления плашки */
+    border: 2px solid var(--bg-color);  /* padding вокруг плашки */
+}
