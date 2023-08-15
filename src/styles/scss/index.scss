@@ -1,6 +1,6 @@
-@import 'reset';
+@import 'reset.scss';
 @import 'antd/dist/reset.css';
-@import './variables/local.scss';
+@import './variables/global.scss';
 
 body {
     background: var(--bg-color);
