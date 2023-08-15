@@ -6,8 +6,6 @@ export interface BuildPaths {
   src: string;
   styles: string;
   buildStyles: string;
-  config: string;
-  buildConfig: string;
   types: string;
   buildTypes: string;
 }

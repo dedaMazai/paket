@@ -16,7 +16,7 @@ export function buildWebpackConfig(options: BuildOptions): webpack.Configuration
             filename: '[name].js',
             path: paths.build,
             library: {
-                name: 'andrei-bread-lib',
+                name: 'common',
                 type: 'umd',
             },
             umdNamedDefine: true,
@@ -35,11 +35,3 @@ export function buildWebpackConfig(options: BuildOptions): webpack.Configuration
         },
     };
 }
-
-  // "exports": {
-  //   "./*": {
-  //     "types": "./dist/*.d.ts",
-  //     "import": "./dist/*.js",
-  //     "default": "./dist/*.js"
-  //   }
-  // },

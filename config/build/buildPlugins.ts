@@ -22,7 +22,6 @@ export function buildPlugins(options: BuildOptions): webpack.WebpackPluginInstan
 			patterns: [
 				{ from: paths.styles, to: paths.buildStyles },
 				{ from: paths.types, to: paths.buildTypes },
-				{ from: paths.config, to: paths.buildConfig },
 			],
 		}),
 	];

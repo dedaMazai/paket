@@ -9,3 +9,6 @@ export * from './lib/hooks';
 export * from './lib/utils/utils';
 
 export * from './const/globalRouter';
+
+export * from './styles/themes/main';
+export * from './config/i18/locales/index';

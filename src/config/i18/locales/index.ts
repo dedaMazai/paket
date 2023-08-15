@@ -2,7 +2,7 @@ import { EN } from './en';
 import { RU } from './ru';
 import { ZH } from './zh';
 
-const TRANSLATIONS = {
+export const TRANSLATIONS = {
     en: {
         translation: EN,
     },
@@ -13,5 +13,3 @@ const TRANSLATIONS = {
         translation: ZH,
     },
 };
-
-export default TRANSLATIONS;
