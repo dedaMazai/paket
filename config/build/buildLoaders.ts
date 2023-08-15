@@ -38,9 +38,6 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
         use: [
             {
                 loader: 'ts-loader',
-                options: {
-                    transpileOnly: false,
-                },
             },
         ],
     };
@@ -70,8 +67,8 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
     return [
         fileLoader,
         svgLoaders,
-        tsLoader,
         babelLoader,
+        tsLoader,
         ...cssLoaders,
     ];
 }

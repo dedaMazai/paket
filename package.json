@@ -3,10 +3,9 @@
   "version": "0.0.13",
   "description": "",
   "main": "dist/index.js",
-  "module": "src/index.js",
   "scripts": {
+    "pub": "webpack && npm version patch && npm publish",
     "start": "storybook dev -p 6006",
-    "clean": "rm -rf dist",
     "build:prod": "webpack --env mode=production",
     "build:dev": "webpack --env mode=development",
     "lint:ts": "eslint \"**/*.{ts,tsx}\"",
@@ -14,8 +13,7 @@
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
     "test": "jest --config ./config/jest/jest.config.ts",
-    "build-storybook": "storybook build",
-    "storybook": "storybook dev -p 6006"
+    "build-storybook": "storybook build"
   },
   "keywords": [],
   "author": "",
@@ -32,6 +30,9 @@
     "@storybook/addon-onboarding": "^1.0.8",
     "@storybook/react": "^7.2.3",
     "@storybook/react-webpack5": "^7.2.3",
+    "@storybook/preset-scss": "^1.0.3",
+    "ts-loader": "^9.4.4",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
     "@svgr/webpack": "^6.3.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -83,14 +84,13 @@
     "react": ">=18",
     "react-dom": ">=18"
   },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {},
   "jest": {
     "transformIgnorePatterns": [
       "/node_modules/(?!antd|@ant-design|rc-.+?|@babel/runtime).+(js|jsx)$"
     ]
-  },
-  "dependencies": {
-    "@storybook/preset-scss": "^1.0.3",
-    "ts-loader": "^9.4.4",
-    "tsconfig-paths-webpack-plugin": "^4.1.0"
   }
 }

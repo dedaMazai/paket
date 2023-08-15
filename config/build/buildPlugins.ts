@@ -13,15 +13,6 @@ export function buildPlugins(options: BuildOptions): webpack.WebpackPluginInstan
 		new webpack.DefinePlugin({
 			__IS_DEV__: JSON.stringify(isDev),
 		}),
-		new ForkTsCheckerWebpackPlugin({
-			typescript: {
-				diagnosticOptions: {
-					semantic: true,
-					syntactic: true,
-				},
-				mode: 'write-references',
-			},
-		}),
 		new MiniCssExtractPlugin({
 			filename: 'css/[name].css',
 			chunkFilename: 'css/[name].css',
