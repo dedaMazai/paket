@@ -4,7 +4,6 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "publish": "npm run build && npm version patch && npm publish",
     "start": "storybook dev -p 6006",
     "build": "webpack --env mode=production",
     "lint:ts": "eslint \"**/*.{ts,tsx}\"",
@@ -12,7 +11,8 @@
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
     "test": "jest --config ./config/jest/jest.config.ts",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "go:publish": "npm run build && npm version patch && npm publish"
   },
   "keywords": [],
   "author": "",
