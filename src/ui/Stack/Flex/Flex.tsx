@@ -7,7 +7,7 @@ export type FlexAlign = 'start' | 'center' | 'end';
 export type FlexDirection = 'row' | 'column';
 export type FlexGap = '2' | '4' | '8' | '16' | '24' | '32' | '64';
 
-type DivProps = DetailedHTMLProps<
+export type DivProps = DetailedHTMLProps<
     HTMLAttributes<HTMLDivElement>,
     HTMLDivElement
 >;
