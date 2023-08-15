@@ -85,7 +85,7 @@ function download(type: string, data: string | number | boolean, name?: string) 
     document.body.removeChild(a);
 }
 
-export const Utils = {
+export const GlobalUtils = {
     formatNumber,
     formatDate,
     download,
