@@ -1,2 +1,2 @@
-export * from './shared/ui/Button/Button';
-export * from './shared/ui/Input/Input';
+export * from './ui/CustomButton';
+export * from './ui/Input/Input';
