@@ -6,10 +6,6 @@ declare module '*.scss' {
   export = classNames
 }
 
-interface Window {
-  bpmnModeler?: any;
-}
-
 declare module '*.png';
 declare module '*.jpg';
 declare module '*.jpeg';
