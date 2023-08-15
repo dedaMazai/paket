@@ -1,5 +1,5 @@
 export type Mods = Record<string, boolean | string | undefined>;
-type Argument = string | Mods | Array<string | undefined>;
+export type Argument = string | Mods | Array<string | undefined>;
 
 export function classNames(...args: Array<Argument>): string {
     return args

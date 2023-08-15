@@ -8,6 +8,12 @@ export default (env: BuildEnv) => {
         entry: path.resolve(__dirname, 'src', 'index.ts'),
         build: path.resolve(__dirname, 'dist'),
         src: path.resolve(__dirname, 'src'),
+        styles: path.resolve(__dirname, 'src', 'styles'),
+        buildStyles: path.resolve(__dirname, 'dist', 'styles'),
+        types: path.resolve(__dirname, 'src', 'types'),
+        buildTypes: path.resolve(__dirname, 'dist', 'types'),
+        config: path.resolve(__dirname, 'src', 'config'),
+        buildConfig: path.resolve(__dirname, 'dist', 'config'),
     };
 
     const mode = env?.mode || 'development';

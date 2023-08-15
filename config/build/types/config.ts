@@ -4,6 +4,12 @@ export interface BuildPaths {
   entry: string;
   build: string;
   src: string;
+  styles: string;
+  buildStyles: string;
+  config: string;
+  buildConfig: string;
+  types: string;
+  buildTypes: string;
 }
 
 export interface BuildEnv {

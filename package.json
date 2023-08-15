@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "publish": "webpack && npm version patch && npm publish",
+    "publish": "npm run build && npm version patch && npm publish",
     "start": "storybook dev -p 6006",
     "build": "webpack --env mode=production",
     "lint:ts": "eslint \"**/*.{ts,tsx}\"",
@@ -90,5 +90,8 @@
     "transformIgnorePatterns": [
       "/node_modules/(?!antd|@ant-design|rc-.+?|@babel/runtime).+(js|jsx)$"
     ]
+  },
+  "dependencies": {
+    "copy-webpack-plugin": "^11.0.0"
   }
 }

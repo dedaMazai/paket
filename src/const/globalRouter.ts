@@ -8,7 +8,7 @@ export enum AppRouters {
     NOT_FOUND = 'not_found'
 }
 
-const RoutePath: Record<AppRouters, (path?: string) => string> = {
+export const RoutePath: Record<AppRouters, (path?: string) => string> = {
     [AppRouters.MAIN]: () => '/',
     [AppRouters.FORBIDDEN]: () => '/forbidden',
     [AppRouters.AUTH]: () => '/auth',
@@ -18,5 +18,3 @@ const RoutePath: Record<AppRouters, (path?: string) => string> = {
     // last
     [AppRouters.NOT_FOUND]: () => '*',
 };
-
-export default RoutePath;
